@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    <script src="index.js" type="text/javascript" defer></script>
+    <title>Balls</title>
+</head>
+<body>
+    <h1 class="data-use">Data Useage: </h1>
+    <nav class="nav-bar">
+        <div>
+            <!-- <div class="select">
+                <button class="shadow"> Add Sun</button>
+                <button class="move-balls">Mannual Mode</button>
+            </div> -->
+            <div>
+                <button class="reset"> reset</button>
+                <input 
+                type="number" 
+                id="num-ball"
+                class="num-ball" 
+                placeholder="Enter Number 1 - 15"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '')"
+                max="15"
+                >
+            </div>
+            <button class="play">Play ▶</button>
+        </div>
+	</nav>
+    <div class="container">
+        <!-- <div class="wrapper"> -->
+            <div class="sun"></div>
+            <div class="loadingPage">
+                <button class="shadow">Add Shadow</button>
+                <button class="move-balls">Mannual Mode</button>
+            </div>
+        <!-- </div> -->
+    </div>
+</body>
+</html>
